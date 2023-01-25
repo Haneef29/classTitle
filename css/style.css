@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: o;
+    box-sizing: border-box;
+}
+/* start header */
+.content .header ul{
+    display: flex;
+    flex-direction: row;
+    /* text-align: right; */
+    justify-content: right;
+    /* text-decoration: none; */
+    /* background-color: crimson; */
+}
+#container .header ul{
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    padding-top: 0px;
+}
+#container .header h1{
+    text-align: center;
+    color: crimson;
+}
+/* end header */
+/* profile */
+img{
+    width: 200px;
+    height: 300px;
+}
+#container .item{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    margin-right: 140px;
+}
+/* end profile */
+/* list section */
+#container .products{
+    /* justify-content: center; */
+    align-items: right;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: right;
+    text-align: center;
+}
+#container .products .lost{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.products img{
+    width: 200px;
+    height: 200px;
+}
+#container .products .name{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+/* lost1{
+    grid-column: 1/3;
+}
+lost2{
+    grid-column: 3/5;
+}
+lost3{
+    5/9
+} */
+
+/* end list section */
+/* end section */
+.end{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* padding: 10px; */
+    text-decoration: none;
+    list-style: none;
+    background-color: wheat;
+}
+.end .mailing{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+/* End end sction */
+@media screen and (min-width: 320px) {
+    #container .item{
+        display: flex;
+        flex-direction: column;
+    }
+    #container .products .lost{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #container .end{
+        display: flex;
+        flex-direction: column;
+    }
+    #container .content .header ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media  screen and (min-width: 1024px) {
+    #container .item{
+        display: flex;
+        flex-direction: row;
+    }
+    #container .products .lost{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #container .end{
+        display: flex;
+        flex-direction: row;
+    }
+    #container .content .header ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
